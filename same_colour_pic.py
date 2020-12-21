@@ -23,6 +23,7 @@ class app():
         self.image_cv = None
         self.frm = tkinter.Frame(self.window, width=310, height=250, bg = 'darkslategrey')
         self.frm.place(x = 450, y = 50)
+        self.a = None
 
         pallete_name = tkinter.Label(text='The pallete', bg = 'darkslategrey').place(x = 540, y = 20)
         
@@ -37,7 +38,8 @@ class app():
         self.menu_menu.add_cascade(label="Instruction")
 
         take_to_pallete = tkinter.Button(self.window, text = 'Find the pallete', width = 25, bg = 'teal', command = self.add_to_the_pallete).place(x = 35,y = 330)
-        find_similar = tkinter.Button(self.window, text = 'Find similar images', width = 25, bg = '#ccccb3').place(x = 235,y = 330)
+        add_to_comparison = tkinter.Button(self.window, text = 'Add for comparison', width = 25, command = self.add_for_comparison ).place(x = 235, y = 330)
+        find_similar = tkinter.Button(self.window, text = 'Find similar images', width = 25, bg = '#ccccb3', command = self.find_similar_im).place(x = 435,y = 330)
 
         self.window.config(menu = self.menu_menu)
         self.window.mainloop()
@@ -98,6 +100,33 @@ class app():
         pallete = FigureCanvasTkAgg(ans, master = self.frm)
         pallete.get_tk_widget().pack()
         pallete.draw()
+
+    def add_for_comparison(self, n = 0):
+        while n !=3:
+            self.a = []
+            self.window.filename = filedialog.askopenfilename(initialdir = "/",title = "Select file",filetypes = (("jpeg files","*.JPG"),("png files","*.png")))
+            imagee = Image.open(self.window.filename)
+            base_width = 400
+            width_percent = (base_width / float(imagee.size[0]))
+            hsize = int((float(imagee.size[1] * float(width_percent))))
+            imagee = imagee.resize((base_width, hsize), Image.ANTIALIAS)
+            self.my_image = ImageTk.PhotoImage(imagee)
+            self.a.append(self.my_image)
+            self.my_image = None
+            n +=1
+        return self.a
+
+    def find_similar_im(self):
+        self.root = tkinter.Toplevel()
+        self.root.geometry('700x450')
+        self.root.title('Similar image analis')
+        self.root.resizable(False, False)
+        
+        
+        self.root.mainloop()
+        
+        
+        
 
 
 app = app()
