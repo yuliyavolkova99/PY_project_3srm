@@ -16,14 +16,15 @@ class app():
         self.window.geometry('760x400')
         self.window.title('SameColourPic')
         self.window.resizable(False,False)
+        self.window.configure(background = 'darkslategrey')
         self.window.filename = None
-        self.labell = tkinter.Label(width=400, height=300)
+        self.labell = tkinter.Label(width=400, height=300, bg = 'darkslategrey')
         self.labell.place(x=25,y=10)
         self.image_cv = None
-        self.frm = tkinter.Frame(self.window, width=310, height=250)
+        self.frm = tkinter.Frame(self.window, width=310, height=250, bg = 'darkslategrey')
         self.frm.place(x = 450, y = 50)
 
-        pallete_name = tkinter.Label(text='The pallete').place(x = 540, y = 20)
+        pallete_name = tkinter.Label(text='The pallete', bg = 'darkslategrey').place(x = 540, y = 20)
         
         self.menu_menu = tkinter.Menu()
 
@@ -35,7 +36,7 @@ class app():
         self.menu_menu.add_cascade(label="File", menu = self.file_menu)
         self.menu_menu.add_cascade(label="Instruction")
 
-        take_to_pallete = tkinter.Button(self.window, text = 'Find the pallete', width = 25, bg = '#bcb100', command = self.add_to_the_pallete).place(x = 35,y = 330)
+        take_to_pallete = tkinter.Button(self.window, text = 'Find the pallete', width = 25, bg = 'teal', command = self.add_to_the_pallete).place(x = 35,y = 330)
         find_similar = tkinter.Button(self.window, text = 'Find similar images', width = 25, bg = '#ccccb3').place(x = 235,y = 330)
 
         self.window.config(menu = self.menu_menu)
