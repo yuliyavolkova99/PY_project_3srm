@@ -1,0 +1,15 @@
+Welcome to the program!
+
+This application is designed to search for images with similar color palette based on internal algorithms. All you need to do is upload the main image and, using simple interface buttons, get the finished result.
+
+Here's a quick guide to the process:
+
+1. Load the main image you want to work with. This can be done by selecting the "Upload new image" function in the main tab of the "File" menu. Select a suitable photo in the explorer. Please note that the program is configured in such a way that when you select a processed object, you initially only have access to jpeg and pdf objects. This is done to make your job easier. Click on the image and select "Open." Done! The image appeared in the application window.
+
+2. Then you can see the color palette of the image. For the best visualization and clarity of the application, the developers have prepared simple and accessible functionality for you. All you need to do is click a button in the Find Palette interface window. Fine! The color palette is available to you for review.
+
+3. The next logical step is to select the images that you want to compare with the main subject. Click the "add to compare" button and select three images of your choice. The program will remember the selected objects.
+
+4. Select the color by which the program will compare the selected images with the original using the button "Chose the main colour".
+
+5. Finally, all you need to do is click the "Find similar images" button. An additional window will open in which you can see the completed work of the application. It's that simple!
