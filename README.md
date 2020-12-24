@@ -2,6 +2,11 @@
     <img src="https://github.com/Mahapeth/PY_project_3sem/blob/master/AppIcon.jpg" width="300" alt="SameColourPic">
 </p>
 <img src="https://img.shields.io/badge/Python-3.8-9cf" width="100" alt="Python 3.8"> <img src="https://img.shields.io/badge/Version-0.0.1-9cf" width="120" alt="Version 0.0.1">
+
+<p align="center">
+    <img src="https://github.com/Mahapeth/PY_project_3sem/blob/master/video%20of%20programm.gif" width="450" alt="Video of programm">
+</p>
+
 <h3> <i> 🐍 Проект  по предмету "Языки и методы программирования" выполнили обучающиеся 2 курса на направлении прикладная математика и информатика: 🐍 </i> </h3>
 
 <a  href='https://github.com/yuliyavolkova99'> <b> <i> Волкова Юлия (ПМ-1901) </i> </b> </a>, <a href='https://github.com/Mahapeth'> <b> <i> Петухова Мария (ПМ-1901) </i> </b> </a>, <a href='https://github.com/YumanovS'> <b> <i> Юманов Сергей (ПМ-1902) </i> </b> </a>
